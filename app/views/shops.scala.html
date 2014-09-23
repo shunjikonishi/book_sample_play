@@ -1,0 +1,8 @@
+@()
+<h1>Shops</h1>
+<div>
+	<a id="breadcrumb-home" href="#">Home</a>
+</div>
+<ul id="shops-list" data-bind="foreach: shops">
+  <li><a href="#" data-bind="attr: { 'data-id': id}, text: name"></a></li> 
+</ul>

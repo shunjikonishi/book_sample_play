@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>テスト</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen,print" href="/assets/test/mocha.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+<script src="/assets/test/chai.js"></script>
+<script src="/assets/test/mocha.js"></script>
+<script>mocha.setup("bdd");</script>
+<script src="/assets/test/test.book.js"></script>
+</head>
+<body>
+<div id="mocha"></div>
+<script>
+$(function() {
+	mocha.checkLeaks();
+	//mocha.globals(["hoge", "fuga"]);
+	mocha.run();
+});
+</script>
+</body>
+</html>

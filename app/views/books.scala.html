@@ -1,0 +1,26 @@
+@()
+<h1>Books</h1>
+<div>
+	<a id="breadcrumb-home" href="#">Home</a>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>book id</th>
+      <th>title</th>
+      <th>author</th>
+      <th>author id</th>
+    </tr>
+  </thead>
+  <tbody id="books-tbody" data-bind="foreach: books">
+    <tr>
+      <td data-bind="text: id"></td>
+      <td data-bind="text: name"></td>
+      <td data-bind="text: author.name"></td>
+      <td data-bind="text: author.id"></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <p>Ordered by author name and book id</p>
+</div>

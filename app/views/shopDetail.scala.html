@@ -1,0 +1,30 @@
+@()
+<h1 id="shop-name"></h1>
+<div>
+	<a id="breadcrumb-home" href="#">Home</a>
+  >
+  <a id="breadcrumb-shops" href="#">Shops</a>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>title</th>
+      <th>author</th>
+      <th>author id</th>
+      <th>quantity</th>
+    </tr>
+  </thead>
+  <tbody id="shop-books-tbody" data-bind="foreach: books">
+    <tr>
+      <td data-bind="text: id"></td>
+      <td data-bind="text: name"></td>
+      <td data-bind="text: author.name"></td>
+      <td data-bind="text: author.id"></td>
+      <td data-bind="text: quantity"></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <p>Ordered by book title</p>
+</div>

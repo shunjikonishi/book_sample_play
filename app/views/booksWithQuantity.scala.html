@@ -1,0 +1,24 @@
+@()
+<h1>Books with quantity among all shops</h1>
+<div>
+	<a id="breadcrumb-home" href="#">Home</a>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>book id</th>
+      <th>title</th>
+      <th>quantity</th>
+    </tr>
+  </thead>
+  <tbody id="books-tbody" data-bind="foreach: books">
+    <tr>
+      <td data-bind="text: id"></td>
+      <td data-bind="text: name"></td>
+      <td data-bind="text: quantity"></td>
+    </tr>
+  </tbody>
+</table>
+<div>
+  <p>Ordered by author quantity and book.id</p>
+</div>

@@ -1,0 +1,4 @@
+if (typeof(bookstore) === "undefined") bookstore = {};
+
+(function ($) {
+"use strict";

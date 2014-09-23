@@ -1,0 +1,20 @@
+{
+  "name": "Book-Sample",
+  "version": "0.0.1",
+  "authors": [
+    "Shunji Konishi"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/shunjikonishi/book_sample_play",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.21.4"
+  }
+}

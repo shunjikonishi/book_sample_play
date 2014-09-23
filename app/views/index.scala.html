@@ -1,0 +1,18 @@
+@()
+@main("Book sample") {
+<div class="container" id="container" style="display:none;">
+	<h1>Index</h1>
+	<ul>
+		<li><a id="index-books" href="#">Books</a></li>
+		<li><a id="index-shops" href="#">Shops</a></li>
+		<li><a id="index-books-with-quantity" href="#">Books with quantity</a></li>
+		<li><a href="/assets/test/test.html">Test</a></li>
+	</ul>
+</div>
+<script>
+var app;
+$(function() {
+	app = new bookstore.Application();
+});
+</script>
+}
